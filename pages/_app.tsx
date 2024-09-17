@@ -4,6 +4,8 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import theme from '../theme';
 import type { AppProps } from 'next/app';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/globals.css';
 
 const queryClient = new QueryClient();
 

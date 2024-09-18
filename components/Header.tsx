@@ -1,30 +1,28 @@
-// components/Header.tsx
-
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 import styles from '../styles/Home.module.css';
 
 const Header: React.FC = () => {
   return (
-    <header className={styles.header}>
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className={styles.backgroundVideo}
-      >
-        <source src="/img/1058-142621439_small.mp4" type="video/mp4" />
-      </video>
-      <div className={styles.headerContent}>
-        <div className={styles.headerContentInner}>
-          <h1>
+    <>
+      <header className={styles.header}>
+        <nav className={styles.navbar}>
+          <a href="/">TAGUCHI SEMINAR</a>
+          <a href="/about">ABOUT</a>
+          <a href="/members">MEMBERS</a>
+          <a href="/activities">ACTIVITIES</a>
+          <a href="/apply">APPLY</a>
+          <a href="/qna">Q & A</a>
+          <a href="/contact">CONTACT</a>
+          <a href="/instagram">INSTAGRAM</a>
+        </nav>
+        <Container className={styles.headerContent}>
+          <h1 className={styles.sectionTitle}>
             大阪公立大学
             <br />
             商学部 田口ゼミ
           </h1>
-          <hr />
-          <p>
+          <p className={styles.headerText}>
             ここは大阪公立大学商学部商学科田口ゼミナールのホームページです。
             <br />
             「モノづくり企業のイノベーション戦略と価値共創」を研究しています。
@@ -35,20 +33,17 @@ const Header: React.FC = () => {
             variant="primary"
             size="lg"
             href="/shinjosho"
-            style={{
-              borderRadius: '15px',
-              backgroundColor: '#b80000',
-              color: 'white',
-              borderColor: '#b80000',
-            }}
+            className={styles.headerButton}
           >
-            現在、ゼミの研究に関するアンケート調査を実施しています！
+            志望理由書の提出はここから！
             <br />
-            ご協力よろしくお願いします！
+            皆さんのご応募、お待ちしております！
           </Button>
-        </div>
-      </div>
-    </header>
+        </Container>
+      </header>
+
+      <div className={styles.sectionBorder}></div> {/* 赤いラインを追加 */}
+    </>
   );
 };
 

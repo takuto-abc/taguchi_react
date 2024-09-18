@@ -14,7 +14,7 @@ const NavigationBar: React.FC = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
           <span className="sr-only">Toggle navigation</span>
-          <span style={{ color: '#777' }}>MENU ≡</span>
+          <span style={{ color: '#777' }}>≡</span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto" navbar>

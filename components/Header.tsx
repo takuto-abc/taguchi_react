@@ -1,38 +1,36 @@
 import React from 'react';
-import Link from 'next/link'; // Linkコンポーネントをインポート
 import { Button, Container } from 'react-bootstrap';
 import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
 const Header: React.FC = () => {
   return (
     <>
       <header className={styles.header}>
+        {/* ナビゲーションバー */}
         <nav className={styles.navbar}>
-          <Link href="/" passHref>
-            TAGUCHI SEMINAR
-          </Link>
-          <Link href="/about" passHref>
-            ABOUT
-          </Link>
-          <Link href="/members" passHref>
-            MEMBERS
-          </Link>
-          <Link href="/activities" passHref>
-            ACTIVITIES
-          </Link>
-          <Link href="/apply" passHref>
-            APPLY
-          </Link>
-          <Link href="/qna" passHref>
-            Q & A
-          </Link>
-          <Link href="/contact" passHref>
-            CONTACT
-          </Link>
-          <Link href="/instagram" passHref>
-            INSTAGRAM
-          </Link>
+          <Link href="/">TAGUCHI SEMINAR</Link>
+          <Link href="/about">ABOUT</Link>
+          <Link href="/members">MEMBERS</Link>
+          <Link href="/activities">ACTIVITIES</Link>
+          <Link href="/apply">APPLY</Link>
+          <Link href="/qna">Q & A</Link>
+          <Link href="/contact">CONTACT</Link>
+          <Link href="/instagram">INSTAGRAM</Link>
         </nav>
+
+        {/* 背景ビデオ */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className={styles.backgroundVideo}
+        >
+          <source src="/img/1058-142621439_small.mp4" type="video/mp4" />
+        </video>
+
+        {/* ヘッダーコンテンツ */}
         <Container className={styles.headerContent}>
           <h1 className={styles.sectionTitle}>
             大阪公立大学
@@ -58,7 +56,9 @@ const Header: React.FC = () => {
           </Button>
         </Container>
       </header>
-      <div className={styles.sectionBorder}></div> {/* 赤いラインを追加 */}
+
+      {/* セクション間の赤いライン */}
+      <div className={styles.sectionBorder}></div>
     </>
   );
 };

@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1a1a1a; /* 背景色を黒っぽく設定 */
+  background-color: #ffffff; /* 背景色を黒っぽく設定 */
   padding-bottom: 50px;
 }
 
@@ -26,7 +26,7 @@
   position: relative;
   z-index: 1;
   text-align: center;
-  color: white;
+  color: black;
   padding: 60px 20px;
   max-width: 800px;
   margin: 0 auto;
@@ -59,6 +59,11 @@
   background-color: #ff3333; /* ホバー時の背景色を明るい赤に変更 */
   border-color: #ff3333; /* ホバー時のボーダー色も同様に変更 */
   color: white; /* テキストは白のまま */
+}
+
+.headerButton:active {
+  /* クリック時のスタイル */
+  background-color: #ff0000; /* クリック時の赤色 */
 }
 
 /* ナビゲーションバーのスタイリング */

@@ -20,7 +20,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 
 // カスタムCSSをインポート
-import styles from '../styles/Home.module.css';
+// import styles from '../styles/Home.module.css';
 import ContentSection from '../components/ContentsSection';
 
 const HomePage = () => {
@@ -28,16 +28,15 @@ const HomePage = () => {
     // 必要な初期化や副作用があればここに記述
   }, []);
 
-  const cards = [
-    {
-      href: 'https://example.com/card1',
-      imgSrc: '/img/picture1.jpeg',
-      altText: '活動内容',
-      title: '活動内容',
-      subtitle: 'ゼミの概要、年間スケジュールはこちら！',
-    },
-    // 他のカードデータを追加
-  ];
+  // const cards = [
+  //   {
+  //     href: 'https://example.com/card1',
+  //     imgSrc: '/img/picture1.jpeg',
+  //     altText: '活動内容',
+  //     title: '活動内容',
+  //     subtitle: 'ゼミの概要、年間スケジュールはこちら！',
+  //   },
+  // ];
 
   return (
     <>

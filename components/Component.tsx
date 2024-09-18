@@ -23,7 +23,13 @@ export default function Component() {
             <div>
               <div>{section.content}</div>
               {section.images.map((image, imgIndex) => (
-                <Image key={imgIndex} src={image} alt={section.title} width={300} height={200} />
+                <Image
+                  key={imgIndex}
+                  src={image}
+                  alt={section.title}
+                  width={300}
+                  height={200}
+                />
               ))}
             </div>
           )}
@@ -32,4 +38,3 @@ export default function Component() {
     </div>
   );
 }
-

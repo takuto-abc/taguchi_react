@@ -17,17 +17,17 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="ja">
-      <Head>
-        {/* フォントやスタイルシートのリンクをここに移動 */}
-        <link
-          href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=optional"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900&display=optional"
-          rel="stylesheet"
-        />
-      </Head>
+        <Head>
+          {/* フォントやスタイルシートのリンクをここに移動 */}
+          <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=optional"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900&display=optional"
+            rel="stylesheet"
+          />
+        </Head>
 
         <body>
           <Main />

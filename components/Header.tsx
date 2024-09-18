@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'; // Linkコンポーネントをインポート
 import { Button, Container } from 'react-bootstrap';
 import styles from '../styles/Home.module.css';
 
@@ -7,14 +8,30 @@ const Header: React.FC = () => {
     <>
       <header className={styles.header}>
         <nav className={styles.navbar}>
-          <a href="/">TAGUCHI SEMINAR</a>
-          <a href="/about">ABOUT</a>
-          <a href="/members">MEMBERS</a>
-          <a href="/activities">ACTIVITIES</a>
-          <a href="/apply">APPLY</a>
-          <a href="/qna">Q & A</a>
-          <a href="/contact">CONTACT</a>
-          <a href="/instagram">INSTAGRAM</a>
+          <Link href="/" passHref>
+            TAGUCHI SEMINAR
+          </Link>
+          <Link href="/about" passHref>
+            ABOUT
+          </Link>
+          <Link href="/members" passHref>
+            MEMBERS
+          </Link>
+          <Link href="/activities" passHref>
+            ACTIVITIES
+          </Link>
+          <Link href="/apply" passHref>
+            APPLY
+          </Link>
+          <Link href="/qna" passHref>
+            Q & A
+          </Link>
+          <Link href="/contact" passHref>
+            CONTACT
+          </Link>
+          <Link href="/instagram" passHref>
+            INSTAGRAM
+          </Link>
         </nav>
         <Container className={styles.headerContent}>
           <h1 className={styles.sectionTitle}>

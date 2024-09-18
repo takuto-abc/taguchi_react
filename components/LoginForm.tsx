@@ -24,7 +24,7 @@ const LoginForm: React.FC = () => {
     <Formik
       initialValues={{ email: '', password: '' }}
       validationSchema={validationSchema}
-      onSubmit={(values) => {
+      onSubmit={() => {
         // ログイン処理
       }}
     >

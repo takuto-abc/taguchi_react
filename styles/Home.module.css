@@ -26,7 +26,7 @@
   position: relative;
   z-index: 1;
   text-align: center;
-  color: black;
+  color: white;
   padding: 60px 20px;
   max-width: 800px;
   margin: 0 auto;
@@ -35,14 +35,14 @@
 .sectionTitle {
   font-size: 3rem; /* フォントサイズを大きく調整 */
   font-weight: bold;
-  color: #fff;
+  color: #000000;
   margin-bottom: 20px;
 }
 
 .headerText {
   font-size: 1.25rem;
   line-height: 1.8;
-  color: #ddd;
+  color: #000000;
   margin-bottom: 30px;
 }
 

@@ -13,7 +13,7 @@ const NavigationBar: React.FC = () => {
           Taguchi Seminar
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
-          <span className="sr-only">Toggle navigation</span>
+          <span className="sr-only"></span>
           <span style={{ color: '#777' }}>≡</span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">

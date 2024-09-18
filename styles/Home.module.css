@@ -129,3 +129,19 @@
     display: none;
   }
 }
+
+@media only screen and (max-width: 375px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .headerButton {
+    width: 100%;
+    font-size: 14px;
+  }
+}

@@ -1,13 +1,23 @@
 // components/LoginForm.tsx
 
 import { Formik, Form, Field } from 'formik';
-import { Button, FormControl, FormLabel, Input, FormErrorMessage } from '@chakra-ui/react';
+import {
+  Button,
+  FormControl,
+  FormLabel,
+  Input,
+  FormErrorMessage,
+} from '@chakra-ui/react';
 import * as Yup from 'yup';
 
 const LoginForm: React.FC = () => {
   const validationSchema = Yup.object({
-    email: Yup.string().email('無効なメールアドレスです').required('必須項目です'),
-    password: Yup.string().min(6, '6文字以上で入力してください').required('必須項目です'),
+    email: Yup.string()
+      .email('無効なメールアドレスです')
+      .required('必須項目です'),
+    password: Yup.string()
+      .min(6, '6文字以上で入力してください')
+      .required('必須項目です'),
   });
 
   return (

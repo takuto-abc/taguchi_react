@@ -1,17 +1,17 @@
 // pages/index.tsx
 
 import { useEffect } from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
-import { Navbar, Nav, Container, Button } from 'react-bootstrap';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation } from 'swiper/modules';
-import { FaInstagram } from 'react-icons/fa';
+// import Head from 'next/head';
+// import Link from 'next/link';
+// import { Navbar, Nav, Container, Button } from 'react-bootstrap';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Autoplay, Navigation } from 'swiper/modules';
+// import { FaInstagram } from 'react-icons/fa';
 import Header from '../components/Header';
-import Footer from '../components/Footer'; 
+import Footer from '../components/Footer';
 import Component from '../components/Component';
-import SliderSection from '../components/SliderSection'; 
-import NavigationBar from '../components/NavigationBar'; 
+import SliderSection from '../components/SliderSection';
+import NavigationBar from '../components/NavigationBar';
 import CustomHead from '../components/CustomHead';
 
 // Swiperのスタイルをインポート
@@ -41,10 +41,8 @@ const HomePage = () => {
 
   return (
     <>
-    
       <CustomHead />
 
-   
       <NavigationBar />
 
       <Header />
@@ -56,7 +54,6 @@ const HomePage = () => {
       <Component />
 
       <Footer />
-
     </>
   );
 };

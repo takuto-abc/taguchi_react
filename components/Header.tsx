@@ -41,7 +41,6 @@ const Header: React.FC = () => {
           </Button>
         </Container>
       </header>
-
       <div className={styles.sectionBorder}></div> {/* 赤いラインを追加 */}
     </>
   );

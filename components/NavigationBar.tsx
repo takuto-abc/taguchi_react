@@ -42,7 +42,7 @@ const NavigationBar: React.FC = () => {
               href="https://www.instagram.com/taguc_chaaan?igshid=azZlcmRrZDgyb2xq&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
-              className="d-flex align-items-center"  // アイコンとテキストの位置調整
+              className="d-flex align-items-center" // アイコンとテキストの位置調整
             >
               <FaInstagram /> Instagram
             </Nav.Link>

@@ -9,7 +9,8 @@ const ContentSection: React.FC = () => {
         <Container>
           <h2 className={styles.sectionTitle}>大阪公立大学商学部 田口ゼミ</h2>
           <p>
-            田口ゼミは<strong>モノづくり企業のイノベーション戦略と価値共創</strong>
+            田口ゼミは
+            <strong>モノづくり企業のイノベーション戦略と価値共創</strong>
             を研究するゼミです。
           </p>
           <p>ゼミ生は個性的な人が多く、みんな仲良く陽気な人が多いです！</p>
@@ -24,7 +25,6 @@ const ContentSection: React.FC = () => {
           </p>
         </Container>
       </section>
-      
       <div className={styles.sectionBorder}></div> {/* 赤いラインを追加 */}
     </>
   );

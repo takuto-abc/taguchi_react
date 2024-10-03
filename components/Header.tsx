@@ -52,9 +52,7 @@ const Header: React.FC = () => {
             href="/shinjosho"
             className={styles.headerButton}
           >
-            志望理由書の提出はここから！
-            <br />
-            皆さんのご応募、お待ちしております！
+            田口ゼミの詳細についてはこちらから！
           </Button>
         </Container>
       </header>

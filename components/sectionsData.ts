@@ -14,7 +14,7 @@ export type Section = {
       description: 'ゼミの概要、年間スケジュールはこちら！',
       content:
         'ここに活動内容の詳細な説明が入ります。年間を通じてどのような活動を行うのか、主要なイベントや研究テーマについての情報が含まれます。',
-      images: ['/images/lake.jpg'],
+      images: ['/images/hansin.jpg'],
       link: '/activity-details',
     },
     {
@@ -22,7 +22,7 @@ export type Section = {
       description: '現3回生のプロフィールはこちら！',
       content:
         'ゼミ生たちの個性豊かなプロフィールを紹介します。それぞれの研究テーマや趣味、ゼミでの役割などが詳しく書かれています。',
-      images: ['/images/lake.jpg'],
+      images: ['/images/four.jpg'],
       link: '/student-profiles',
     },
     {
@@ -30,7 +30,7 @@ export type Section = {
         description: '課外活動、合宿など過去の活動はこちら！',
         content:
           'ここに過去の活動の詳細な説明が入ります。これまでゼミ活動として行なってきたことについての情報が含まれます。',
-        images: ['/images/lake.jpg'],
+        images: ['/images/bainan.jpg'],
         link: '/student-profiles',
       },
       {
@@ -38,7 +38,7 @@ export type Section = {
         description: '説明会等でいただいた質問と回答はこちら！',
         content:
           'よくある質問や選考についての質問が入ります。ゼミ説明会でいただいた質問もここに含まれます。',
-        images: ['/images/lake.jpg'],
+        images: ['/images/love.jpg'],
         link: '/student-profiles',
       },
       {
@@ -46,7 +46,7 @@ export type Section = {
         description: 'ゼミに関するお問い合わせはこちら！',
         content:
           '田口ゼミへのお問い合わせフォームが入ります。',
-        images: ['/images/lake.jpg'],
+        images: ['/images/meat2.jpg'],
         link: '/student-profiles',
       },
       {
@@ -54,7 +54,7 @@ export type Section = {
         description: '田口ゼミの選考についてはこちらから！',
         content:
           'ゼミの選考に関する内容が書かれています。',
-        images: ['/images/lake.jpg'],
+        images: ['/images/hilltop.jpg'],
         link: '/student-profiles',
       },
 ];

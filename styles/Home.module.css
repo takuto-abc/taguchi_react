@@ -152,6 +152,35 @@
   left: 2vw;  /* 左から2%の位置に配置 */
 }
 
+.footer {
+  background-color: #f8f9fa; /* 背景色をライトカラーに設定 */
+  text-align: center;
+  padding: 20px;
+}
+
+.text {
+  font-size: 1.5rem; /* デフォルトのフォントサイズ */
+  margin-bottom: 10px;
+}
+
+.iconLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* アイコンとテキストの間のスペース */
+}
+
+.instagramIcon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.username {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+
 @media (max-width: 768px) {
   .sectionTitle {
     font-size: 1.5rem;
@@ -184,6 +213,17 @@
 
   .swiper-button-prev {
     left: 10vw;  /* 画面幅が小さい場合の左の位置 */
+  }
+
+  .text {
+    font-size: 1.2rem;
+  }
+  .username {
+    font-size: 1rem;
+  }
+  .instagramIcon, .iconLink img {
+    width: 30px;
+    height: 30px;
   }
 
 }
@@ -383,6 +423,16 @@
   .navbar-right ~ .navbar-right {
     margin-right: 0;
   }
+  .text {
+    font-size: 1.2rem;
+  }
+  .username {
+    font-size: 1.2rem;
+  }
+  .instagramIcon, .iconLink img {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media (max-device-width: 480px) and (orientation: landscape) {
@@ -474,6 +524,16 @@
   @media (min-width: 1200px) {
     .swiperBox {
       max-width: 800px; /* 大きなデスクトップ画面では最大幅を800pxに */
+    }
+    .text {
+      font-size: 2rem;
+    }
+    .username {
+      font-size: 1.5rem;
+    }
+    .instagramIcon, .iconLink img {
+      width: 50px;
+      height: 50px;
     }
   }
 }

@@ -1,21 +1,27 @@
-// components/Footer.tsx
-
-// import { footer } from 'framer-motion/client';
 import React from 'react';
+import Image from 'next/image'; // Next.jsのImageコンポーネントをインポート
 import { FaInstagram } from 'react-icons/fa';
+import styles from '../styles/Home.module.css';
 
 const Footer: React.FC = () => (
-  <footer className="bg-light text-center p-4">
+  <footer className={styles.footer}>
     <>
-      <p>インスタグラムはこちらから！</p>
+      <p className={styles.text}>インスタグラムはこちらから！</p>
       <a
         href="https://www.instagram.com/taguc_chaaan?igsh=azZlcmRrZDgyb2xq&utm_source=qr"
         target="_blank"
         rel="noopener noreferrer"
+        className={styles.iconLink}
       >
-        <FaInstagram size={40} />
+        {/* imagesディレクトリのアイコン画像を使用 */}
+        <Image
+          src="/images/instagram_icon copy.png" // imagesディレクトリ内の画像を指定
+          alt="Instagram Icon"
+          width={40}
+          height={40}
+        />
       </a>
-      <p>@taguc_chaaan</p>
+      <p className={styles.username}>@taguc_chaaan</p>
     </>
   </footer>
 );

@@ -16,6 +16,7 @@ const SliderSection: React.FC = () => {
           modules={[Autoplay, Navigation]}
           navigation
           autoplay={{ delay: 5000, disableOnInteraction: false }}
+          speed={1200}
           loop
           centeredSlides
           slidesPerView={1} 

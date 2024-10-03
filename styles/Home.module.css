@@ -138,8 +138,8 @@
 
 /* 矢印ボタンのスタイル */
 .swiper-button-next, .swiper-button-prev {
-  width: 5vw;  /* ビューポート幅の5%を使用 */
-  height: 5vw;  /* ビューポート幅の5%を使用 */
+  width: 3rem;  /* vwからremに変更 */
+  height: 3rem;
   color: #000;  /* 矢印の色を設定 */
 }
 
@@ -181,103 +181,95 @@
 }
 
 .container {
+  padding: 2rem;
+}
+
+.contentHead {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px; /* 上のセクションとのスペースを追加 */
+}
+
+.mainTitle {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* グリッド表示用のスタイル */
+.gridContainer {
   padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
-.section {
-  margin-bottom: 40px;
-}
-
-.title {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-.description {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.toggleButton {
-  background-color: #0070f3;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.toggleButton:hover {
-  background-color: #005bb5;
-}
-
-.dialog {
-  margin-top: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-}
-
-.content {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-}
-
-.imageContainer {
-  display: flex;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.image {
-  border-radius: 10px;
-}
-
-.cardContainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  padding: 20px;
 }
 
 .card {
-  width: 400px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.imageContainer {
   overflow: hidden;
-  transition: transform 0.3s;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
-.card:hover {
-  transform: scale(1.05);
+.image {
+  transition: transform 0.3s ease;
 }
 
-.cardImage {
-  border-bottom: 1px solid #ccc;
+.image:hover {
+  transform: scale(1.1); /* 画像を少し拡大 */
 }
 
 .cardContent {
-  padding: 20px;
+  padding: 16px;
+  flex-grow: 1; /* 内容部分がカード全体に広がるようにする */
+}
+
+.buttonContainer {
   text-align: center;
+  margin-top: auto; /* ボタンを下に配置 */
 }
 
-.cardContent h3 {
-  margin-bottom: 10px;
-  font-size: 1.5rem;
+.toggleButton {
+  border-radius: 8px;
+  padding: 10px 20px;
+  background-color: #3182ce;
+  color: white;
+  cursor: pointer;
+  border: none;
 }
 
-.cardContent p {
-  font-size: 1rem;
-  color: #666;
+.toggleButton:hover {
+  background-color: #2c5282;
 }
 
+.dialog {
+  margin-top: 10px;
+}
+
+.link {
+  color: #3182ce;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.ttl {
+  font-size: 24px;
+  font-weight: bold;
+}
 
 @media (max-width: 768px) {
   .sectionTitle {

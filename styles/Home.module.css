@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent; 
+  background-color: transparent;
   padding-bottom: 50px;
 }
 
@@ -121,7 +121,7 @@
   height: 100%; /* 必要に応じて高さを100%に設定 */
   max-width: 90%; /* デフォルトで最大幅を90%に */
   margin: 0 auto; /* コンテンツを中央に配置 */
-  background-color: #f5f5f5; 
+  background-color: #f5f5f5;
   padding: 10px;
 }
 
@@ -137,19 +137,20 @@
 }
 
 /* 矢印ボタンのスタイル */
-.swiper-button-next, .swiper-button-prev {
-  width: 3rem;  /* vwからremに変更 */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 3rem; /* vwからremに変更 */
   height: 3rem;
-  color: #000;  /* 矢印の色を設定 */
+  color: #000; /* 矢印の色を設定 */
 }
 
 /* スライダー矢印の位置調整 */
 .swiper-button-next {
-  right: 2vw;  /* 右から2%の位置に配置 */
+  right: 2vw; /* 右から2%の位置に配置 */
 }
 
 .swiper-button-prev {
-  left: 2vw;  /* 左から2%の位置に配置 */
+  left: 2vw; /* 左から2%の位置に配置 */
 }
 
 .footer {
@@ -292,17 +293,18 @@
     display: none;
   }
 
-  .swiper-button-next, .swiper-button-prev {
-    width: 8vw;  /* ビューポート幅が小さい時に少し大きく */
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 8vw; /* ビューポート幅が小さい時に少し大きく */
     height: 8vw;
   }
 
   .swiper-button-next {
-    right: 10vw;  /* 画面幅が小さい場合の右の位置 */
+    right: 10vw; /* 画面幅が小さい場合の右の位置 */
   }
 
   .swiper-button-prev {
-    left: 10vw;  /* 画面幅が小さい場合の左の位置 */
+    left: 10vw; /* 画面幅が小さい場合の左の位置 */
   }
 
   .text {
@@ -311,15 +313,12 @@
   .username {
     font-size: 1rem;
   }
-  .instagramIcon, .iconLink img {
+  .instagramIcon,
+  .iconLink img {
     width: 30px;
     height: 30px;
   }
-
 }
-
-
-
 
 @media (min-width: 768px) {
   .navbar-right .dropdown-menu {
@@ -338,7 +337,7 @@
   .nav-tabs.nav-justified > li > a {
     margin-bottom: 0;
   }
-  
+
   .nav-tabs.nav-justified > li > a {
     border-bottom: 1px solid #ddd;
     border-radius: 4px 4px 0 0;
@@ -370,7 +369,7 @@
   .swiperBox {
     max-width: 600px; /* タブレット以上の画面では最大幅を600pxに制限 */
   }
-  
+
   .navbar {
     border-radius: 4px;
   }
@@ -383,7 +382,7 @@
     width: auto;
     border-top: 0;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
   .navbar-collapse.collapse {
     display: block !important;
@@ -410,7 +409,7 @@
     margin-right: 0;
     margin-left: 0;
   }
-  
+
   .navbar-static-top {
     border-radius: 0;
   }
@@ -477,8 +476,8 @@
   .navbar-form .checkbox label {
     padding-left: 0;
   }
-  .navbar-form .radio input[type="radio"],
-  .navbar-form .checkbox input[type="checkbox"] {
+  .navbar-form .radio input[type='radio'],
+  .navbar-form .checkbox input[type='checkbox'] {
     position: relative;
     margin-left: 0;
   }
@@ -494,7 +493,7 @@
     margin-left: 0;
     border: 0;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
 
   .navbar-text {
@@ -519,7 +518,8 @@
   .username {
     font-size: 1.2rem;
   }
-  .instagramIcon, .iconLink img {
+  .instagramIcon,
+  .iconLink img {
     width: 40px;
     height: 40px;
   }
@@ -532,7 +532,6 @@
   }
 }
 
-
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
@@ -542,7 +541,7 @@
     background-color: transparent;
     border: 0;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
   .navbar-nav .open .dropdown-menu > li > a,
   .navbar-nav .open .dropdown-menu .dropdown-header {
@@ -621,7 +620,8 @@
     .username {
       font-size: 1.5rem;
     }
-    .instagramIcon, .iconLink img {
+    .instagramIcon,
+    .iconLink img {
       width: 50px;
       height: 50px;
     }

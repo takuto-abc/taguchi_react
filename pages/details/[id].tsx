@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { sections } from '../../components/sectionsData'; // 正しいパスでsectionsDataをインポート
 import { Section } from '../../components/sectionsData'; // 型もインポート
+import Image from 'next/image'; // Imageコンポーネントをインポート
 
 export default function SectionDetails() {
   const router = useRouter();
@@ -24,7 +25,14 @@ export default function SectionDetails() {
       <p>{section.content}</p>
       <div>
         {section.images.map((image, index) => (
-          <img key={index} src={image} alt={`${section.title} image ${index}`} width={400} height={300} />
+          <Image
+            key={index}
+            src={image}
+            alt={`${section.title} image ${index}`}
+            width={400}
+            height={300}
+            className="responsive-image" // 必要に応じてスタイルを適用
+          />
         ))}
       </div>
     </div>

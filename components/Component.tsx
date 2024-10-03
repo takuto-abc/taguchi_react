@@ -24,12 +24,11 @@ export default function Component() {
           <Card key={index} className={styles.card}>
             <div className={styles.imageContainer}>
               <Image
-                src={section.images[0]}
-                alt={section.title}
-                width={400}
-                height={200}
+                src={section.images[0]} // セクションごとの画像を表示
+                alt={section.title} // 代替テキスト
+                width={400} // 画像の幅
+                height={200} // 画像の高さ
                 className={styles.image}
-                layout="responsive"
               />
             </div>
             <CardHeader>
@@ -37,18 +36,25 @@ export default function Component() {
               <p>{section.description}</p>
             </CardHeader>
             <CardContent>
-              <Button onClick={() => handleToggleDialog(index)} variant="outline" className="w-full">
+              <Button
+                onClick={() => handleToggleDialog(index)}
+                className={styles.toggleButton}
+              >
                 {openDialog === index ? '詳細を閉じる' : '詳細を見る'}
               </Button>
               {openDialog === index && (
                 <div className="mt-4">
-                  <p className="text-sm text-muted-foreground">{section.content}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {section.content}
+                  </p>
                 </div>
               )}
             </CardContent>
             <CardFooter>
-              <Link href={section.link} className="text-sm text-primary hover:underline">
-                もっと詳しく
+              <Link href={section.link}>
+                <a className="text-sm text-primary hover:underline">
+                  もっと詳しく
+                </a>
               </Link>
             </CardFooter>
           </Card>

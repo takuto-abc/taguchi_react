@@ -31,7 +31,7 @@ export default function SectionDetails() {
             alt={`${section.title} image ${index}`}
             width={400}
             height={300}
-            className="responsive-image" // 必要に応じてスタイルを適用
+            className="responsive-image"
           />
         ))}
       </div>

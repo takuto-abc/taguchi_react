@@ -1,6 +1,5 @@
-// components/SliderSection.tsx
-
 import React from 'react';
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -19,25 +18,42 @@ const SliderSection: React.FC = () => {
           autoplay={{ delay: 5000, disableOnInteraction: false }}
           loop
           centeredSlides
-          breakpoints={{
-            767: { slidesPerView: 1, spaceBetween: 0 },
-            991: { slidesPerView: 1, spaceBetween: 0 },
-            992: { slidesPerView: 2, spaceBetween: 0 },
-          }}
+          slidesPerView={1} 
+          spaceBetween={0} 
         >
           <SwiperSlide>
             <div className={styles.swiperBox}>
-              <img src="/img/IMG_7416.jpg" alt="活動写真1" />
+              <img src="/images/lake.jpg" alt="活動写真1" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.swiperBox}>
-              <img src="/img/IMG_7415.jpg" alt="活動写真2" />
+              <img src="/images/boat.jpg" alt="活動写真2" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.swiperBox}>
-              <img src="/img/IMG_7419.JPG" alt="活動写真3" />
+              <img src="/images/baseball.jpg" alt="活動写真3" />
+            </div>
+          </SwiperSlide>  
+          <SwiperSlide>
+            <div className={styles.swiperBox}>
+              <img src="/images/royce.jpg" alt="活動写真4" />
+            </div>
+          </SwiperSlide>         
+          <SwiperSlide>
+            <div className={styles.swiperBox}>
+              <img src="/images/heart.jpg" alt="活動写真5" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.swiperBox}>
+              <img src="/images/beel.jpg" alt="活動写真6" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.swiperBox}>
+              <img src="/images/meat.jpg" alt="活動写真7" />
             </div>
           </SwiperSlide>
         </Swiper>

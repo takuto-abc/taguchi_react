@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff; /* 背景色を黒っぽく設定 */
+  background-color: transparent; 
   padding-bottom: 50px;
 }
 
@@ -26,7 +26,7 @@
   position: relative;
   z-index: 1;
   text-align: center;
-  color: white;
+  color: #f7f7f7;
   padding: 60px 20px;
   max-width: 800px;
   margin: 0 auto;
@@ -49,7 +49,7 @@
 .headerButton {
   border-radius: 15px;
   background-color: #b80000;
-  color: white;
+  color: #f7f7f7;
   border-color: #b80000;
   padding: 15px 30px;
   font-size: 1rem;
@@ -113,6 +113,45 @@
   color: #b80000; /* 強調したい部分を赤色に */
 }
 
+.swiperBox {
+  display: flex;
+  justify-content: center; /* 水平方向に中央寄せ */
+  align-items: center; /* 垂直方向に中央寄せ */
+  width: 100%;
+  height: 100%; /* 必要に応じて高さを100%に設定 */
+  max-width: 90%; /* デフォルトで最大幅を90%に */
+  margin: 0 auto; /* コンテンツを中央に配置 */
+  background-color: #f5f5f5; 
+  padding: 10px;
+}
+
+.swiperBox img {
+  max-width: 100%; /* 親要素の幅にフィット */
+  height: auto;
+  object-fit: cover; /* アスペクト比を保ちながらサイズを調整 */
+  border-radius: 8px; /* デザインの一部として角を少し丸める */
+}
+
+.swiper-slide {
+  background-color: #f5f5f5; /* スライドごとの背景色を調整 */
+}
+
+/* 矢印ボタンのスタイル */
+.swiper-button-next, .swiper-button-prev {
+  width: 5vw;  /* ビューポート幅の5%を使用 */
+  height: 5vw;  /* ビューポート幅の5%を使用 */
+  color: #000;  /* 矢印の色を設定 */
+}
+
+/* スライダー矢印の位置調整 */
+.swiper-button-next {
+  right: 2vw;  /* 右から2%の位置に配置 */
+}
+
+.swiper-button-prev {
+  left: 2vw;  /* 左から2%の位置に配置 */
+}
+
 @media (max-width: 768px) {
   .sectionTitle {
     font-size: 1.5rem;
@@ -133,6 +172,20 @@
   .navbar {
     display: none;
   }
+
+  .swiper-button-next, .swiper-button-prev {
+    width: 8vw;  /* ビューポート幅が小さい時に少し大きく */
+    height: 8vw;
+  }
+
+  .swiper-button-next {
+    right: 10vw;  /* 画面幅が小さい場合の右の位置 */
+  }
+
+  .swiper-button-prev {
+    left: 10vw;  /* 画面幅が小さい場合の左の位置 */
+  }
+
 }
 
 
@@ -174,18 +227,20 @@
     margin-bottom: 0;
   }
 
-  @media (min-width: 768px) {
-    .nav-tabs-justified > li > a {
-      border-bottom: 1px solid #ddd;
-      border-radius: 4px 4px 0 0;
-    }
-    .nav-tabs-justified > .active > a,
-    .nav-tabs-justified > .active > a:hover,
-    .nav-tabs-justified > .active > a:focus {
-      border-bottom-color: #fff;
-    }
+  .nav-tabs-justified > li > a {
+    border-bottom: 1px solid #f7f7f7;
+    border-radius: 4px 4px 0 0;
+  }
+  .nav-tabs-justified > .active > a,
+  .nav-tabs-justified > .active > a:hover,
+  .nav-tabs-justified > .active > a:focus {
+    border-bottom-color: #f7f7f7;
   }
 
+  .swiperBox {
+    max-width: 600px; /* タブレット以上の画面では最大幅を600pxに制限 */
+  }
+  
   .navbar {
     border-radius: 4px;
   }
@@ -416,5 +471,9 @@
     background-color: transparent;
   }
 
-  
+  @media (min-width: 1200px) {
+    .swiperBox {
+      max-width: 800px; /* 大きなデスクトップ画面では最大幅を800pxに */
+    }
+  }
 }

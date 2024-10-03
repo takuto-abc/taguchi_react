@@ -27,7 +27,9 @@ const Header: React.FC = () => {
           playsInline
           className={styles.backgroundVideo}
         >
-          <source src="/img/1058-142621439_small.mp4" type="video/mp4" />
+          <source src="/images/1058-142621439_small.mp4" type="video/mp4" />
+          <source src="/images/1058-142621439_small.webm" type="video/webm" />
+          <source src="/images/1058-142621439_small.ogg" type="video/ogg" />
         </video>
 
         {/* ヘッダーコンテンツ */}

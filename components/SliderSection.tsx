@@ -15,46 +15,81 @@ const SliderSection: React.FC = () => {
         <Swiper
           modules={[Autoplay, Navigation]}
           navigation
-          autoplay={{ delay: 5000, disableOnInteraction: false }}
-          speed={1200}
+          autoplay={{ delay: 7000, disableOnInteraction: false }}
+          speed={1500}
           loop
           centeredSlides
-          slidesPerView={1} 
-          spaceBetween={0} 
+          slidesPerView={1}
+          spaceBetween={0}
         >
           <SwiperSlide>
             <div className={styles.swiperBox}>
-              <img src="/images/lake.jpg" alt="活動写真1" />
+              <Image
+                src="/images/lake.jpg"
+                alt="活動写真1"
+                width={500}
+                height={300}
+              />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.swiperBox}>
-              <img src="/images/boat.jpg" alt="活動写真2" />
+              <Image
+                src="/images/boat.jpg"
+                alt="活動写真2"
+                width={500}
+                height={300}
+              />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.swiperBox}>
-              <img src="/images/baseball.jpg" alt="活動写真3" />
-            </div>
-          </SwiperSlide>  
-          <SwiperSlide>
-            <div className={styles.swiperBox}>
-              <img src="/images/royce.jpg" alt="活動写真4" />
-            </div>
-          </SwiperSlide>         
-          <SwiperSlide>
-            <div className={styles.swiperBox}>
-              <img src="/images/heart.jpg" alt="活動写真5" />
+              <Image
+                src="/images/baseball.jpg"
+                alt="活動写真3"
+                width={500}
+                height={300}
+              />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.swiperBox}>
-              <img src="/images/beel.jpg" alt="活動写真6" />
+              <Image
+                src="/images/royce.jpg"
+                alt="活動写真4"
+                width={500}
+                height={300}
+              />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.swiperBox}>
-              <img src="/images/meat.jpg" alt="活動写真7" />
+              <Image
+                src="/images/heart.jpg"
+                alt="活動写真5"
+                width={500}
+                height={300}
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.swiperBox}>
+              <Image
+                src="/images/beel.jpg"
+                alt="活動写真6"
+                width={500}
+                height={300}
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.swiperBox}>
+              <Image
+                src="/images/meat.jpg"
+                alt="活動写真7"
+                width={500}
+                height={300}
+              />
             </div>
           </SwiperSlide>
         </Swiper>

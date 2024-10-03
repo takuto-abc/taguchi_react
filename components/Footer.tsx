@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image'; // Next.jsのImageコンポーネントをインポート
-import { FaInstagram } from 'react-icons/fa';
 import styles from '../styles/Home.module.css';
 
 const Footer: React.FC = () => (
